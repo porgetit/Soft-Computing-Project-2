@@ -1,0 +1,13 @@
+flowchart TD
+  A[heart.csv (303 filas)] --> B[Seleccionar variables\n age, sex, trestbps, chol, hdl, fbs]
+  B --> C[Cuantiles por columna\n 5% 25% 50% 75% 95%]
+  C --> D[Variables lingüísticas\n low/mid/high (continuas)\n crisp 0/1 (binarias)]
+  D --> E[Base de reglas\n Sugeno orden 0]
+  E --> F[Inferencia Sugeno\n promedio ponderado]
+  F --> J[fis_score ∈ [0,1]]
+  J --> G{fis_score ≥ 0.5?}
+  G -- Sí --> H[fis_pred = 1]
+  G -- No --> I[fis_pred = 0]
+  H --> K[Escribir heart_predictions.csv]
+  I --> K
+  C -. guarda cortes .-> L[fis_breaks_used.txt]
