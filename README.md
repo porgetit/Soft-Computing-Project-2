@@ -1,4 +1,4 @@
-# Imitación de un FIS con Adaline (mlxtend) — Informe Técnico (Borrador)
+# Imitación de un FIS con Adaline (mlxtend) — Informe Técnico
 
 Autores: Kevin Esguerra Cardona — Estudiante del curso de Computación Blanda IS845-2 (Segundo Semestre 2025), Universidad Tecnológica de Pereira, Programa de Ingeniería en Sistemas y Computación. Correo: kevin.esguerra@utp.edu.co
 
